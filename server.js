@@ -1,3 +1,7 @@
+// Server for MVC Tech Blog
+
+// Dependencies
+// path module
 const path = require('path');
 // dotenv file for sensitive configuration information
 require('dotenv').config();
@@ -21,7 +25,7 @@ const hbs = exphbs.create({ helpers });
 
 // Initialize sessions
 const sess = {
-    secret: process.env.DB_SESSION_SECRET,
+    secret: "secret",
     cookie: { maxAge: 7200000 },
     resave: false,
     saveUninitialized: true,
@@ -57,4 +61,4 @@ app.use(routes);
 // force: false to maintain data - aka normal operation
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('Now listening'));
-  });
+});
