@@ -11,7 +11,7 @@ const helpers = require('./utils/helpers');
 const hbs = exphbs.create({ helpers });
 
 const sess = {
-    secret: "secret",
+    secret: "secrets",
     cookie: {},
     resave: false,
     saveUninitialized: true,

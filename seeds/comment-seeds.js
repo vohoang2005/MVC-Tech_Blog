@@ -2,32 +2,32 @@ const { Comment } = require('../models');
 
 const commentData = [
   {
-    comment_text: "Wow! I didn't know about partials. Thanks!",
+    comment_text: "Partials is actually easy to understand!",
     post_id: 3,
     user_id: 1
   },
   {
-    comment_text: "TEXT is another useful data type for entering long form text data.",
+    comment_text: "Other useful data types are Integer and Text.",
     post_id: 1,
     user_id: 4
   },
   {
-    comment_text: "Ah, so that's what cookies are good for (besides eating ~.0)!",
+    comment_text: "Cookies used to cache sites and passwords for clients to view the site faster!",
     post_id: 4,
     user_id: 2
   },
   {
-    comment_text: "Great. Now I'm hungry for cookies.",
+    comment_text: "Ending the session is when you exit it",
     post_id: 4,
     user_id: 3
   },
   {
-    comment_text: "Did you know about salting?",
+    comment_text: "Is Security important in Programming?",
     post_id: 5,
     user_id: 5
   },
   {
-    comment_text: "Yeah! Adding that random data is a great way to force a unique hashed output, even when your users all pick 'password' for their password >.< ",
+    comment_text: "Hasing is a great way to prevent hackers from hacking our password!",
     post_id: 5,
     user_id: 4
   },
