@@ -22,6 +22,7 @@ const sess = {
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const host = "0.0.0.0"
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.engine('handlebars', hbs.engine);
@@ -32,5 +33,5 @@ app.use(session(sess));
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, host, ()=> console.log('Now listening'));
 });
