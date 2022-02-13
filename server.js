@@ -17,7 +17,7 @@ const sess = {
     saveUninitialized: true,
     store: new SequelizeStore({
       db: sequelize
-    })
+    }),
   };
 
 const app = express();
@@ -31,6 +31,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(session(sess));
 app.use(routes);
 
-app.listen(PORT, function() {
-  console.log("Listening on Port 3001");
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
 });
