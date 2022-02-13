@@ -8,13 +8,14 @@
     "express-session": "^1.17.2",
     "init": "^0.1.2",
     "mysql2": "^2.3.3",
+    "node": "^17.4.0",
     "nodemon": "^2.0.15",
     "sequelize": "^6.16.1"
   },
   "name": "mvc-tech_blog",
   "description": "",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
